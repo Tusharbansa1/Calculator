@@ -1,0 +1,25 @@
+.calculator{
+	margin-top: 100px;
+}
+.buttons{
+	margin : 10px;
+}
+#idequal{
+	padding-left: 31px;
+	padding-right: 31px;
+}
+#ac{
+	padding-left: 23px;
+
+	padding-right: 22px;
+}
+#del{
+	padding-left: 23px;
+	padding-right: 22px;	
+}
+
+.display{
+	border: solid;
+	border-radius: 5px;
+	height: 30px;
+}
