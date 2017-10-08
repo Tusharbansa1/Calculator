@@ -125,21 +125,47 @@ function fun(id){
 
 
 	if(id === 'idequal'){
-		if(sign === 1){
-			final = parseInt(s1) + parseInt(final);
-			document.getElementById("display").innerHTML = final;
+		
+		if(s1){
+
+			if(sign === 1){
+				final = parseInt(s1) + parseInt(final);
+				document.getElementById("display").innerHTML = final;
+			}
+			if(sign === 2){
+				final = parseInt(s1) - parseInt(final);
+				document.getElementById("display").innerHTML = final;
+			}
+			if(sign === 3){
+				final = parseInt(s1) * parseInt(final);
+				document.getElementById("display").innerHTML = final;
+			}
+			if(sign === 4){
+				if(parseInt(final)!=0){
+					final = parseInt(s1) / parseInt(final);
+					document.getElementById("display").innerHTML = final;
+				}
+				else{
+					alert('Cant devide by zero');
+					final = "";
+				}
+			}
+
 		}
-		if(sign === 2){
-			final = parseInt(s1) - parseInt(final);
-			document.getElementById("display").innerHTML = final;
+		else{
+			alert('invalid');
 		}
-		if(sign === 3){
-			final = parseInt(s1) * parseInt(final);
-			document.getElementById("display").innerHTML = final;
-		}
-		if(sign === 4){
-			final = parseInt(s1) / parseInt(final);
-			document.getElementById("display").innerHTML = final;
-		}
+	}
+
+
+	if(id === 'del'){
+		final = final.substring(0, final.length-1);
+		document.getElementById("display").innerHTML = final;
+	}
+
+	if(id === 'ac'){
+		final = "";
+		s1 = "";
+		document.getElementById("display").innerHTML = final;	
 	}
 }
