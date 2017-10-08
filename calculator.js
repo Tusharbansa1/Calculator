@@ -1,6 +1,8 @@
 var final = "";
+var s1;
 function fun(id){
 var  text;
+
 	
    if(id === 'id1'){
    	text = "1";
@@ -71,8 +73,13 @@ var  text;
    	document.getElementById("display").innerHTML = final;
    }
 
-   if(id === 'idequal'){
-
+   if(id === 'idsum'){
+   	s1 = final;
+   	final = "" ;
+   	document.getElementById("display").innerHTML = final;
    }
-
+    if(id === 'idequal'){
+    	final = parseInt(s1) + parseInt(final);
+    	document.getElementById("display").innerHTML = final;
+    }
 }
