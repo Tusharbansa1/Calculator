@@ -16,7 +16,7 @@
 </head>
 <body>
 	<div class="row">
-		<div class="calculator col-md-4 col-md-offset-5">
+		<div class="calculator col-md-4 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4" >
 			<div class="display" id="display">
 
 			</div>
