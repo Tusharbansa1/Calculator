@@ -48,6 +48,7 @@
 			
 			<div class="buttons">
 				<button id="id0"  onclick="fun(this.id)" class="btn no">0</button>
+				<button id="idpoint" onclick="fun(this.id)"  class="btn no">.</button>
 				<button id="idequal" onclick="fun(this.id)"  class="btn no">=</button>
 				<button id="iddiv"  onclick="fun(this.id)" class="btn no">/</button>
 			</div>
