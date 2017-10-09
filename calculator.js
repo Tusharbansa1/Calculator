@@ -74,6 +74,14 @@ function fun(id){
 		document.getElementById("display").innerHTML = final;
 	}
 
+
+	if(id === 'idpoint'){
+		text = '.';
+		text = final + text;
+		final = text;
+		document.getElementById("display").innerHTML = final;
+	}
+
 	if(id === 'idsum'){
 		s1 = final;
 		final = "" ;
